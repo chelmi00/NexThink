@@ -1,0 +1,7 @@
+In the first challenge, I noticed that not having a test environment was a problem for me. I'm used to testing and debugging to get my code to work. However, let me explain my code:
+First of all, I discover the color I will have to work with, with the supposition written as a comment.
+Secondly, I wasn't sure whether to work with global variables or returning the array. I decided to go for the second one, but this was where I would have loved to have an environment test, to make sure it doesn't leak. Many programming languages in my head lead to not remembering how their variables work.
+Anyways, I returned the function changeTo, which goes through the neighboring pixels, check if their color matches with the one I work with, and changes to the one I want.
+
+If I'm not mistaken, the time complexity is O(n), being n the number of pixels to change their color. However, I also thought that working with a 2-dimesion array leads to a O(n²) time complexity. Therefore, I let you choose which one is the real one.
+On the other hand, the space complexity is O(1), since I'm creating only one new variable.
