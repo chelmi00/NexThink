@@ -5,3 +5,9 @@ Anyways, I returned the function changeTo, which goes through the neighboring pi
 
 If I'm not mistaken, the time complexity is O(n), being n the number of pixels to change their color. However, I also thought that working with a 2-dimesion array leads to a O(n²) time complexity. Therefore, I let you choose which one is the real one.
 On the other hand, the space complexity is O(1), since I'm creating only one new variable.
+
+
+The second challege was much more difficult, but having tests to work with made a huge difference. I decided to work by default with as much as 26 nodes, but it can get as big as desired as long as the array "nodo" gets more characters added.
+First, I create the function "matriz", which does nothing new (in reality it only cosumes resources), but I figured I kept it for the sake of consistency. Secondly, I code the "lista" function, which turns the list into a 2D array. Thirdly, I make the "find" and "ciclo" functions, in order to detect cycles in the graph, basing myself in the DFS algorithm.
+
+Complexity wise, it depends on the function. However, there's one woth mentioning: "lista", which has a time complexity of O(n²), even though there are 4 for loops nested. This is due to having two of them containing the array "nodo" information, which is dependent on the number of nodes and not the information itself.
